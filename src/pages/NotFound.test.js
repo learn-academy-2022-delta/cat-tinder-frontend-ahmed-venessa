@@ -19,4 +19,4 @@ describe("When NotFound renders", () => {
     const notFoundHeadingText = notFound.find("h1").text()
     expect(notFoundHeadingText).toEqual("Page not found")
   })
-})
+}) 
