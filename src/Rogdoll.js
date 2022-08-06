@@ -4,25 +4,52 @@
 
 let cats = [
   {
-    id: 1,
-    name: "Mittens",
-    age: 5,
-    enjoys: "sunshine and warm spots",
-    image: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      name: "Happy",
+      age: 5,
+      enjoys: "smiling all day long",
+      image: "https://files.slack.com/files-pri/T04B40L2C-F03SESP4PS7/happy_cat.jpeg"
   },
   {
-    id: 2,
-    name: "Raisins",
-    age: 4,
-    enjoys: "being queen of the dogs",
-    image: "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1092&q=80"
+      name: "seuss",
+      age: 35,
+      enjoys: "doing magic tricks",
+      image: "https://files.slack.com/files-pri/T04B40L2C-F03SDMWLWHZ/image.png"
   },
   {
-    id: 3,
-    name: "Toast",
-    age: 1,
-    enjoys: "getting all the attention",
-    image: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-  }
+      name: "crime mob",
+      age: 5,
+      enjoys: "slapping you in the face",
+      image: "https://i.ytimg.com/vi/SQudKvrwDAU/maxresdefault.jpg"
+  },
+  {
+      name: "White Head",
+      age: 15,
+      enjoys: "Dinning for free",
+      image: "https://files.slack.com/files-pri/T04B40L2C-F03SSDGS2CR/image.png"
+  },
+  {
+      name: "The Ginger Hit Man",
+      age: 15,
+      enjoys: "going on adventures",
+      image: "https://files.slack.com/files-pri/T04B40L2C-F03S77JD3PG/image.png"
+  },
+  {
+    name: "Berry",
+    age: 21,
+    enjoys: "burglary",
+    image: "https://files.slack.com/files-pri/T04B40L2C-F03T3GBSLSC/image.png"
+},
+{
+  name: "Grinch",
+  age: 45,
+  enjoys: "Christmas",
+  image: "https://files.slack.com/files-pri/T04B40L2C-F03SDNMVA5R/image.png"
+},
+{
+  name: "Tom",
+  age: 10,
+  enjoys: "Flipping your house upside down but wont kill any rats",
+  image: "https://files.slack.com/files-pri/T04B40L2C-F03T3HH949W/image.png"
+},
 ]
 export default cats

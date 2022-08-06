@@ -13,7 +13,8 @@ class CatNew extends Component {
                 age: "",
                 enjoys: "",
                 image: ""
-            }
+            },
+            submitted: false 
         }
     }
 
@@ -23,9 +24,11 @@ class CatNew extends Component {
         this.setState({ newCat: newCat })
     }
 
+    
     handleSubmit = () => {
-        console.log(this.state)
-    }
+        this.props.createNewCat(this.state.newCat)
+        this.setState({submitted: true})
+      }
 
 
 
@@ -69,9 +72,8 @@ class CatNew extends Component {
                 </FormGroup>
                 <button
                     name="submit"
-                    onClick={this.handleSubmits} > Submit Cat</button>
-                {/* if submitted is true then go to catindex page  */}
-                {this.state.submitted && <Redirect to="/catindex" />}
+                    onClick={this.handleSubmit} > Submit Cat</button>
+                {this.state.submitted && <Redirect to="/catIndex" />}
             </Form>
         )
     }

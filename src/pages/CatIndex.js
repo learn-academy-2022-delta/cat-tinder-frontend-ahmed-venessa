@@ -13,7 +13,7 @@ import { Card, CardImg, CardText, CardBody,
             {this.props.cats && this.props.cats.map(cat => {
               return(
                 <Card key={cat.id}>
-                  <CardImg top width="100%" src={cat.image} alt="Card image cap" />
+                  <CardImg top width="50%" src={cat.image} alt="Card image cap" />
                   <CardBody>
                     <CardTitle>{cat.name}</CardTitle>
                     <CardSubtitle>{cat.age}</CardSubtitle>
