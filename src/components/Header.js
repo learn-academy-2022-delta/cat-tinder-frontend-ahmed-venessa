@@ -4,9 +4,9 @@ import Navigation from "./Navigation";
 
 class Header extends Component {
   render() {
-    console.log("yes")
+ 
     return (
-      <div>
+      <div className="header">
         <Navigation />
        
       </div>

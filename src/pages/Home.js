@@ -14,16 +14,13 @@ class Home extends Component {
         >
           Welcome to C.C.T (Comedy Cat Tinder)
         </h3>
-        <body style={{
-            float: "left",
-            }}>
-       
-          <img src="https://c.tenor.com/hmmjgl_fB1gAAAAM/knjpopper-cat.gif" 
-          
+
+        <img
+          src="https://c.tenor.com/hmmjgl_fB1gAAAAM/knjpopper-cat.gif"
+          className="center-img"
         />
-        </body>
+
         
-        <section className="main-container"></section>
       </>
     );
   }

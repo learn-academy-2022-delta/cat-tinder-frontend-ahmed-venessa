@@ -15,6 +15,8 @@ let cats = [
       name: "Seuss",
       age: 35,
       enjoys: "Hats and doing magic tricks",
+      bio: "riddle riddle",
+
       image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/10/25/16/the-cat-in-the-hat-2.jpg?quality=75&width=990&auto=webp&crop=982:726,smart"
   },
   {
