@@ -8,19 +8,12 @@ class Home extends Component {
           style={{
             textAlign: "center",
             color: "gold",
-            backgroundColor: "#6CB33F",
+            backgroundColor: "#rgba",
             fontWeight: "bold",
           }}
         >
-          Welcome to C.C.T (Comedy Cat Tinder)
+          Happy International Cat Tnder Day! 
         </h3>
-
-        <img
-          src="https://c.tenor.com/hmmjgl_fB1gAAAAM/knjpopper-cat.gif"
-          className="center-img"
-        />
-
-        
       </>
     );
   }
