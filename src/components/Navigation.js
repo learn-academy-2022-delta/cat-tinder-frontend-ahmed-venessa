@@ -31,12 +31,12 @@ function Navigation() {
         </NavItem>
         <span>|</span>
         <NavItem>
-          <NavLink href="/CatIndex">Adopt A Cat</NavLink>
+          <NavLink href="/cats">Adopt A Cat</NavLink>
         </NavItem>
         <span>|</span>
 
         <NavItem>
-          <NavLink href="/CatIndex">Meet The Cats</NavLink>
+          <NavLink href="/cats">Meet The Cats</NavLink>
         </NavItem>
       </Nav>
     </Nav>

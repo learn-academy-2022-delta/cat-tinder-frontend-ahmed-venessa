@@ -6,8 +6,6 @@ import {
   CardTitle,
   CardSubtitle,
   Button,
-  Row,
-  Col,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 

@@ -9,10 +9,7 @@ class CatEdit extends Component {
     super(props)
     this.state = {
       updatedCat: {
-        name:this.props.cat.name,
-        age: this.props.cat.age,
-        enjoys: this.props.cat.enjoys,
-        image: this.props.cat.image
+        ...this.props.cat
       },
       submitted: false
     }

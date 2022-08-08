@@ -11,24 +11,52 @@ import {
 import { NavLink } from "react-router-dom";
 
 class CatShow extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cat: {},
+    };
+  }
+
+  componentDidMount() {
+    this.readCat();
+  }
+
+  readCat = () => {
+    const { catId } = this.props;
+    fetch("http://localhost:5000/cats/" + catId)
+      .then((response) => response.json())
+      .then((payload) => this.setState({ cat: payload }))
+      .catch((errors) => console.log("Cat read errors: ", errors));
+  };
+
+  handleDeleteCat = (id) => {
+    console.log("deleted", id);
+    // fetch(`http://localhost:5000/cats/${id}`, {
+    //   method: "DELETE",
+    // })
+    //   .then((response) => response.json())
+    //   .catch((errors) => console.log("Cat delete errors: ", errors));
+  };
+
   render() {
     // console.log(this.props.cat)
-    let { cat } = this.props;
+    let { cat } = this.state;
     return (
       <div className="center">
         <Card>
           <CardImg className="cat-image" src={cat.image} alt="Card image cap" />
-          <CardBody>
+          <CardBody className="cat-detail-body">
             <CardTitle>Hi, my name is {cat.name}</CardTitle>
             <br />
             <CardSubtitle>Bio: {cat.bio}</CardSubtitle>
 
             <CardText>Age: {cat.age}</CardText>
             <CardText>Enjoys: {cat.enjoys}</CardText>
-            <NavLink to={`/catedit/${this.props.cat.id}`}>
+            <NavLink to={`/catedit/${cat.id}`}>
               <Button>Update Cat</Button>
             </NavLink>
-            <Button onClick={() => this.props.deleteCat(cat.id)}>
+            <Button onClick={() => this.handleDeleteCat(cat.id)}>
               Delete Cat
             </Button>
           </CardBody>

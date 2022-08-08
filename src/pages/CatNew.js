@@ -73,7 +73,7 @@ class CatNew extends Component {
                 <button
                     name="submit"
                     onClick={this.handleSubmit} > Submit Cat</button>
-                {this.state.submitted && <Redirect to="/catIndex" />}
+                {this.state.submitted && <Redirect to="/cats" />}
             </Form>
         )
     }
